@@ -3,74 +3,77 @@
   <p>From ICON with love</p>
 </header>
 <main>
-  @if (isOpenModal) {
-  <div class="backdrop"></div>
-  <aside class="modal">
-    <h2>Add New Meal</h2>
-    <form>
-      <div class="form-control">
-        <label for="name">Name</label>
-        <input type="text" name="name" id="name" required />
-      </div>
-      <div class="form-control">
-        <label for="description">Description</label>
-        <input type="text" name="description" id="description" required />
-      </div>
-      <div class="form-control">
-        <label for="price">Price</label>
-        <input type="text" name="price" id="price" required />
-      </div>
-      <div class="form-control">
-        <label for="imageUrl">Image Url</label>
-        <input type="text" name="imageUrl" id="imageUrl" required />
-      </div>
-      <div class="form-action">
-        <div>
-          <button type="reset" class="btn btn-alt" (click)="cancel()">
-            Cancel
-          </button>
-          <button type="submit" class="btn">Confirm</button>
-        </div>
-      </div>
-    </form>
-  </aside>
-  }
   <section class="meal">
     <div class="add-meal__btn">
-      <button class="btn" (click)="open()">Add new meal</button>
+      <button class="btn">Add New Meal</button>
     </div>
+    <!-- You can uncomment this line below or remove it -->
+    <p class="starter-text">Get ready and write some magic code 🚀</p>
+
+    <!--  Uncomment these code and binding value properly
     <ul class="meal-list">
-      @for (item of dummyData; track $index) {
       <li class="meal-item">
         <article class="meal-item__card">
-          <img class="meal-item__image" [src]="item.imageUrl" alt="" />
+         Binding image url here 
+          <img class="meal-item__image" src="" alt="" />
           <div class="meal-item__content">
-            <span class="meal-item__name">{{ item.name }}</span>
-            <span class="meal-item__price">{{
-              item.price | currency : "USD" : "symbol"
-            }}</span>
+            <span class="meal-item__name"> Put name here </span>
+            <span class="meal-item__price">
+             Put price here, remember to format the price using currency pipe 
+            </span>
           </div>
           <p class="meal-item__description">
-            {{ item.description }}
+          Put description here 
           </p>
-          @if (item.bookmark) {
+
+         Conditional render bookmark icon base on 'boomark' property 
           <img
             loading="lazy"
             class="meal-item__bookmark"
             src="assets/bookmark-enable.svg"
             alt="Example Icon"
           />
-          }@else {
+
           <img
             loading="lazy"
             class="meal-item__bookmark"
             src="assets/bookmark-disable.svg"
             alt="Example Icon"
           />
-          }
         </article>
       </li>
-      }
     </ul>
-  </section>
+  --></section>
 </main>
+
+<!-- The modal is prepared for you, just to find the appropriate place to handle open/close the modal -->
+<!-- <div class="backdrop"></div>
+<aside class="modal">
+  <h2>Add New Meal</h2>
+  <form>
+    <div class="form-control">
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" required />
+    </div>
+    <div class="form-control">
+      <label for="description">Description</label>
+      <input type="text" name="description" id="description" required />
+    </div>
+    <div class="form-control">
+      <label for="price">Price</label>
+      <input type="text" name="price" id="price" required />
+    </div>
+    <div class="form-control">
+      <label for="imageUrl">Image Url</label>
+      <input type="text" name="imageUrl" id="imageUrl" required />
+    </div>
+    <div class="form-action">
+      <div>
+        <button type="reset" class="btn btn-alt" (click)="cancel()">
+          Cancel
+        </button>
+        <button type="submit" class="btn">Confirm</button>
+      </div>
+    </div>
+  </form>
+</aside> -->

@@ -54,6 +54,23 @@
   padding: 0.35rem;
 }
 
+.form-control label.error {
+  color: rgb(136, 2, 2);
+}
+
+.form-control input.error {
+  border-color: rgb(136, 2, 2);
+  color: rgb(136, 2, 2);
+  background-color: rgb(253, 219, 219);
+}
+
+.form-control div.error {
+  color: rgb(136, 2, 2);
+  font-size: 14px;
+  margin-top: 4px;
+  font-weight: bold;
+}
+
 .form-action {
   display: flex;
   justify-content: flex-end;
@@ -61,16 +78,6 @@
 
 .form-action .btn-alt {
   margin-right: 10px;
-}
-
-.error label {
-  color: rgb(136, 2, 2);
-}
-
-.error input {
-  border-color: rgb(136, 2, 2);
-  color: rgb(136, 2, 2);
-  background-color: rgb(253, 219, 219);
 }
 
 .add-meal__btn {
@@ -86,6 +93,12 @@
   border-radius: 4px;
   cursor: pointer;
   margin: 20px 0 20px auto;
+}
+
+.btn:disabled {
+  pointer-events: none;
+  cursor: auto;
+  opacity: 0.4;
 }
 
 .btn-alt {
@@ -138,6 +151,7 @@
   width: 100%;
   height: 65%;
   border-radius: 4px 4px 0 0;
+  object-fit: cover;
 }
 
 .meal-item__content {

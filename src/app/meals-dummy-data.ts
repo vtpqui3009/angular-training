@@ -1,4 +1,5 @@
 export interface Meal {
+  id: number;
   name: string;
   description: string;
   price: number;
@@ -8,6 +9,7 @@ export interface Meal {
 
 export const MEALS_DUMMY_DATA: Meal[] = [
   {
+    id: 1,
     name: 'Cheeseburger',
     description:
       'A juicy beef patty with melted cheese, lettuce, tomato, and pickles on a toasted bun.',
@@ -17,6 +19,7 @@ export const MEALS_DUMMY_DATA: Meal[] = [
       'https://i.pinimg.com/564x/e9/7f/4b/e97f4b9280e8e9ec718553aa27a6ac65.jpg',
   },
   {
+    id: 2,
     name: 'Buffalo Wings',
     description:
       'Crispy fried chicken wings tossed in a tangy buffalo sauce, served with blue cheese dip.',
@@ -26,6 +29,7 @@ export const MEALS_DUMMY_DATA: Meal[] = [
       'https://i.pinimg.com/564x/e1/6c/6a/e16c6abdb9e04596239436e47178c1cc.jpg',
   },
   {
+    id: 3,
     name: 'BBQ Ribs',
     description:
       'Slow-cooked pork ribs glazed with a smoky barbecue sauce, served with coleslaw and fries.',
@@ -35,6 +39,7 @@ export const MEALS_DUMMY_DATA: Meal[] = [
       'https://i.pinimg.com/564x/b9/41/61/b94161708aef22a007aec44c44a8d902.jpg',
   },
   {
+    id: 4,
     name: 'Mac and Cheese',
     description:
       'Creamy macaroni pasta baked with a blend of cheddar and mozzarella cheese.',
@@ -44,6 +49,7 @@ export const MEALS_DUMMY_DATA: Meal[] = [
       'https://i.pinimg.com/564x/79/4c/e9/794ce94f0e5b8913f1edc6dddfb8b851.jpg',
   },
   {
+    id: 5,
     name: 'Caesar Salad',
     description:
       'Crisp romaine lettuce tossed with Caesar dressing, croutons, and Parmesan cheese.',
@@ -53,6 +59,7 @@ export const MEALS_DUMMY_DATA: Meal[] = [
       'https://i.pinimg.com/564x/07/b3/fa/07b3fa5f80454a92f323140a4504ad23.jpg',
   },
   {
+    id: 6,
     name: 'Apple Pie',
     description:
       'Classic apple pie with a flaky crust and cinnamon-spiced apple filling.',
@@ -62,6 +69,7 @@ export const MEALS_DUMMY_DATA: Meal[] = [
       'https://i.pinimg.com/564x/1d/79/8a/1d798a2f99c9e3d88e0ae6a2c6951112.jpg',
   },
   {
+    id: 7,
     name: 'Clam Chowder',
     description:
       'Hearty New England clam chowder made with tender clams, potatoes, and cream.',
@@ -71,6 +79,7 @@ export const MEALS_DUMMY_DATA: Meal[] = [
       'https://i.pinimg.com/236x/3a/39/93/3a399390accf9dfd549f7e143f22611a.jpg',
   },
   {
+    id: 8,
     name: 'Pancakes',
     description: 'Fluffy pancakes served with butter and maple syrup.',
     price: 6.4444444,
@@ -79,6 +88,7 @@ export const MEALS_DUMMY_DATA: Meal[] = [
       'https://i.pinimg.com/236x/98/6e/80/986e8020d901fe1c313e9460495ec5c3.jpg',
   },
   {
+    id: 9,
     name: 'Fried Chicken',
     description: 'Crispy fried chicken with a golden, crunchy coating.',
     price: 14.8888888,
@@ -87,6 +97,7 @@ export const MEALS_DUMMY_DATA: Meal[] = [
       'https://i.pinimg.com/236x/64/c6/c3/64c6c3752329400aa4ecac9dabf2bc38.jpg',
   },
   {
+    id: 10,
     name: 'Philly Cheesesteak',
     description:
       'Thinly sliced beefsteak with melted cheese and onions in a hoagie roll.',
